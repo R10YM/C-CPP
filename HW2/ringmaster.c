@@ -22,15 +22,15 @@ int main(int argc, char *argv[]) {
     
     create_fifo(num_player);
     
-    sleep(5);
+    sleep(1);
     
     boardcast (num_player, fdWR);
     
-    sleep(5);
+    sleep(1);
     
 	wait_player (num_player, fdRD, &RD_set);
 	
-	sleep(5);
+	sleep(1);
 	
 	POTATO_T potato;
 	potato.msg_type = START;
